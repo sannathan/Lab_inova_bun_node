@@ -1,0 +1,19 @@
+{
+  "name": "lab_inova_bun_node",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.2.5",
+    "@types/figlet": "^1.7.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "figlet": "^1.8.0"
+  }
+}
