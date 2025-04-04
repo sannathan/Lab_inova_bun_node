@@ -54,5 +54,4 @@ const server = Bun.serve({
     return new Response("Internal Server Error", { status: 500 });
   },
 });
-
 console.log(`Servidor rodando na porta: ${server.port}`)
