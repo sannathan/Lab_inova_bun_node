@@ -163,5 +163,11 @@ Req/Bytes counts sampled once per second.
 ``` 
 ### 🔹 6. Considerações finais
 
-Nos resultados acima podemos ver que ambos servidores rodando as mesmas rotas o Bun consegue se sair bem melhor fazendo mais requisições ( 879k ) contra 711k do Node em um tempo menor 10.03s bun vs 11.02s Node sem contar a diferença absurda de latência de 173ms do Node para apenas 28ms do Bun. Pra finalizar vale ressaltar a diferença enorme de velocidade do Runtime do Bun, necessitando apenas de 1481ms para instalar o autocannon contra 4.7s do pnpm que já é considerado um runtime bem veloz para Node. 
+Os testes mostram que o **Bun** entrega uma performance significativamente superior ao **Node.js**:
 
+- **Requisições**: 879k (Bun) vs 711k (Node)
+- **Tempo total**: 10.03s (Bun) vs 11.02s (Node)
+- **Latência máxima**: 28ms (Bun) vs 173ms (Node)
+- **Instalação do Autocannon**: 1.48s (Bun) vs 4.7s (pnpm)
+
+Esses resultados demonstram o potencial do Bun como um runtime moderno, rápido e leve para aplicações em produção.
