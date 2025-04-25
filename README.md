@@ -20,7 +20,6 @@ Este projeto tem como objetivo criar dois servidores HTTP idênticos utilizando 
 ├── 📂 node-server       # Servidor HTTP usando Node.js
 ├── 📂 nginx             # Configuração do proxy reverso
 ├── 📂 docker            # Dockerfiles e docker-compose
-├── 📂 benchmarks        # Resultados do benchmarking
 ├── 📜 README.md         # Documentação do projeto
 └── 📜 .gitignore        # Arquivos ignorados pelo Git
 ```
@@ -82,6 +81,16 @@ Para comparar a performance dos servidores, utilize **Autocannon**:
 autocannon -c 100 -d 10 http://localhost:3000
 ```
 Para o servidor bun use a porta 3000 e para o servidor node, utilize a 3001
+
+#### 🔹 3.1 Instalando o autocannon no Node.js
+```sh
+pnpm i autocannon -g
+```
+
+#### 🔹 3.2 Instalando o autocannon no Bun
+```sh
+bun install --save @types/autocannon
+```
 
 ---
 
@@ -152,4 +161,7 @@ Req/Bytes counts sampled once per second.
 
 711k requests in 11.02s, 121 MB read
 ``` 
+### 🔹 6. Considerações finais
+
+Nos resultados acima podemos ver que ambos servidores rodando as mesmas rotas o Bun consegue se sair bem melhor fazendo mais requisições ( 879k ) contra 711k do Node em um tempo menor 10.03s bun vs 11.02s Node sem contar a diferença absurda de latência de 173ms do Node para apenas 28ms do Bun. Pra finalizar vale ressaltar a diferença enorme de velocidade do Runtime do Bun, necessitando apenas de 1481ms para instalar o autocannon contra 4.7s do pnpm que já é considerado um runtime bem veloz para Node. 
 
