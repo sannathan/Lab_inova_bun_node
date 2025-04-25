@@ -99,8 +99,9 @@ docker ps
 ### 🔹 5. Resultados
 Comparação de velocidade de testes utilizando o autocannon:
 
-## Bun
+#### Bun
 
+```sh
 autocannon -c 100 -d 10 http://localhost:3000
 Running 10s test @ http://localhost:3000
 100 connections
@@ -123,9 +124,11 @@ Req/Bytes counts sampled once per second.
 # of samples: 10
 
 879k requests in 10.03s, 126 MB read
+```
 
-## Node.js
+#### Node.js
 
+```sh
 autocannon -c 100 -d 10 http://localhost:3001
 Running 10s test @ http://localhost:3001
 100 connections
@@ -148,4 +151,5 @@ Req/Bytes counts sampled once per second.
 # of samples: 11
 
 711k requests in 11.02s, 121 MB read
+``` 
 
