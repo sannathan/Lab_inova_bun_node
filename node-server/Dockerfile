@@ -1,6 +1,11 @@
-FROM node:20-alpine
+FROM node
+
 WORKDIR /app
+
 COPY . .
+
 RUN npm install
+
 EXPOSE 3001
-CMD ["node", "serverNode.js"]
+
+ENTRYPOINT ["node", "serverNode.js"]
