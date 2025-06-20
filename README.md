@@ -19,7 +19,6 @@ Este projeto tem como objetivo criar dois servidores HTTP idênticos utilizando 
 ├── 📂 bun-server        # Servidor HTTP usando Bun
 ├── 📂 node-server       # Servidor HTTP usando Node.js
 ├── 📂 nginx             # Configuração do proxy reverso
-├── 📂 docker            # Dockerfiles e docker-compose
 ├── 📜 README.md         # Documentação do projeto
 └── 📜 .gitignore        # Arquivos ignorados pelo Git
 ```
