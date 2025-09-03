@@ -1,0 +1,10 @@
+services:
+  bun-server:
+    build: bun-server/
+    ports:
+      - "3000:3000"
+
+  node-server:
+    build: node-server/
+    ports:
+      - "3001:3001"
